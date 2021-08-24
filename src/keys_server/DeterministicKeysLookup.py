@@ -101,8 +101,11 @@ class DeterministicKeysLookup(OasisBaseKeysLookup):
                 ap_id = self.get_areaperil(peril)
                 for cov in range(1,5):
                     dr_col = required_columns[cov]
-                    dr = float(row[dr_col])*100
-                    v_id = int(dr)
+                    dr = int(float(row[dr_col])*100)
+                    if dr==0:
+                        v_id=101
+                    else:
+                        v_id = dr
 
                     yield {
                         "loc_id": int(loc_id),

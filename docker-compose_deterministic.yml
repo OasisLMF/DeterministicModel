@@ -24,5 +24,5 @@ services:
      - OASIS_KEEP_RUN_DIR=True
     volumes:
      - ./docker-shared-fs:/shared-fs:rw
-     - /home/ubuntu/git/Deterministic-Model-Test/keys_data:/var/oasis/keys_data:rw
-     - /home/ubuntu/git/Deterministic-Model-Test/model_data:/var/oasis/model_data:rw
+     - /home/ubuntu/git/DeterministicModel/keys_data:/var/oasis/keys_data:rw
+     - /home/ubuntu/git/DeterministicModel/model_data:/var/oasis/model_data:rw

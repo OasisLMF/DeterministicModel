@@ -101,9 +101,9 @@ class DeterministicKeysLookup(OasisBaseKeysLookup):
                 ap_id = self.get_areaperil(peril)
                 for cov in range(1,5):
                     dr_col = required_columns[cov]
-                    dr = int(float(row[dr_col])*100)
+                    dr = int(float(row[dr_col])*1000)
                     if dr==0:
-                        v_id=101
+                        v_id=1001
                     else:
                         v_id = dr
 

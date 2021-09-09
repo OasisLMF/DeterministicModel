@@ -3,7 +3,7 @@ services:
    deterministic_worker:
     restart: always
     privileged: true
-    image: coreoasis/oasislmf_deterministic_worker:1.15.13
+    image: coreoasis/oasislmf_deterministic_worker:1.15.14
     links:
      - celery-db
      - rabbit:myrabbit
